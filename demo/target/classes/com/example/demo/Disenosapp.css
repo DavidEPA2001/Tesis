@@ -1,0 +1,64 @@
+.color-fondo-sidebar{
+    -fx-background-color:linear-gradient(to top, #EC603A 0%, #ec603a 100%);
+}
+
+.tablas-datos{
+    -fx-background-color:  transparent;
+    -fx-border-color:  linear-gradient(to top, #09203f 0%, #537895 100%);
+    -fx-border-width:  2px;
+    -fx-border-radius:  5px;
+
+}
+
+.boton-sidebar{
+    -fx-background-color:  transparent;
+    -fx-cursor:  hand;
+    -fx-text-fill:linear-gradient(to top, #ffffff 0%, #ffffff 100%) ;
+    -fx-font-size: 24;
+    -fx-pref-width: 69;
+    -fx-pref-height: 66;
+}
+
+.tamano-slidebar{
+    -fx-min-width: USE_PREF_SIZE;
+    -fx-pref-width: 127;
+    -fx-pref-height: 863;
+}
+
+.icono-slidebar{
+    -fx-fill:linear-gradient(to top, #ffffff 0%, #ffffff 100%) ;
+}
+
+.boton-agregar{
+    -fx-background-radius:  8px;
+    -fx-cursor:  hand;
+    -fx-background-color:  #275578;
+    -fx-font-family: Tahoma;
+    -fx-text-fill: white;
+}
+
+.boton-pagar{
+    -fx-background-radius:  8px;
+    -fx-cursor:  hand;
+    -fx-background-color: #277737;
+    -fx-font-family: Tahoma;
+    -fx-text-fill: white;
+}
+
+.boton-cancelar{
+    -fx-background-radius:  8px;
+    -fx-cursor:  hand;
+    -fx-background-color:  #b52a38;
+    -fx-font-family: Tahoma;
+    -fx-text-fill: white;
+}
+
+.fondo-tablas{
+    -fx-background-color:#fff ;
+    -fx-background-radius: 8px;
+    -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);
+}
+
+
+
+

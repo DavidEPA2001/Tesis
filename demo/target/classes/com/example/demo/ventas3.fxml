@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="809.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <BorderPane layoutX="-8.0" prefHeight="863.0" prefWidth="1205.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane minWidth="-Infinity" prefHeight="863.0" prefWidth="127.0" stylesheets="@Disenosapp.css" BorderPane.alignment="CENTER_LEFT">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_BASKET" layoutX="28.0" layoutY="108.0" size="70" styleClass="icono-slidebar" wrappingWidth="96.67364501953125" />
+                  <Button alignment="BASELINE_LEFT" layoutX="31.0" layoutY="197.0" mnemonicParsing="false" onMouseClicked="#cargarsig" prefHeight="66.0" prefWidth="69.0" stylesheets="@Disenosapp.css" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="boton-sidebar" />
+                        <String fx:value="icono-slidebar" />
+                     </styleClass>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BARCODE" size="40" />
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="29.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#carsig2" prefHeight="66.0" prefWidth="69.0" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="boton-sidebar" />
+                        <String fx:value="icono-slidebar" />
+                     </styleClass>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CREDIT_CARD_ALT" size="40" />
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="35.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#sig" prefHeight="47.0" prefWidth="48.0" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="icono-slidebar" />
+                        <String fx:value="boton-sidebar" />
+                     </styleClass>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="AREA_CHART" size="40" />
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="36.0" layoutY="517.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="59.0" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="icono-slidebar" />
+                        <String fx:value="boton-sidebar" />
+                     </styleClass>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="QUESTION_CIRCLE" size="40" />
+                     </graphic>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <styleClass>
+                  <String fx:value="color-fondo-sidebar" />
+                  <String fx:value="tamano-slidebar" />
+               </styleClass>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="layout" prefHeight="822.0" prefWidth="1034.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="54.0" layoutY="47.0" prefHeight="745.0" prefWidth="280.0" AnchorPane.leftAnchor="54.0">
+                     <children>
+                        <Label layoutX="46.0" layoutY="64.0" prefHeight="20.0" prefWidth="62.0" text="MARCA">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="58.0" layoutY="87.0" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to top right, #64522c, #a8962b);; -fx-border-width: 0px 0px .8px 0px;" />
+                        <Label layoutX="43.0" layoutY="133.0" prefHeight="20.0" prefWidth="95.0" text="NOMBRE">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="200.0" prefHeight="20.0" prefWidth="95.0" text="CANTIDAD">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="43.0" layoutY="267.0" prefHeight="20.0" prefWidth="95.0" text="MONTO">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="55.0" layoutY="294.0" prefHeight="31.0" prefWidth="143.0" />
+                        <Button layoutX="9.0" layoutY="513.0" mnemonicParsing="false" prefHeight="137.0" prefWidth="89.0" styleClass="css-button-sharp--naranja" text="Agregar" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <stylesheets>
+                              <URL value="@Disenosapp.css" />
+                              <URL value="@Disenosapp2.css" />
+                           </stylesheets>
+                        </Button>
+                        <Button layoutX="104.0" layoutY="514.0" mnemonicParsing="false" prefHeight="137.0" prefWidth="89.0" styleClass="css-button-sharp--verde" text="Pagar" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <stylesheets>
+                              <URL value="@Disenosapp.css" />
+                              <URL value="@Disenosapp2.css" />
+                           </stylesheets>
+                        </Button>
+                        <Button layoutX="198.0" layoutY="513.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="89.0" styleClass="css-button-sharp--verdef" text="Cancelar" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <stylesheets>
+                              <URL value="@Disenosapp.css" />
+                              <URL value="@Disenosapp2.css" />
+                           </stylesheets>
+                        </Button>
+                        <Spinner layoutX="53.0" layoutY="224.0" />
+                        <ComboBox layoutX="53.0" layoutY="158.0" prefWidth="150.0" promptText="SELECCIONA" />
+                        <Label layoutX="81.0" layoutY="363.0" prefHeight="20.0" prefWidth="95.0" text="CAMBIO:">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="150.0" layoutY="363.0" prefHeight="20.0" prefWidth="95.0" text="\$0.0">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="433.0" layoutY="11.0" prefHeight="790.0" prefWidth="643.0" AnchorPane.rightAnchor="6.0">
+                     <children>
+                        <TableView layoutX="19.0" layoutY="20.0" prefHeight="637.0" prefWidth="613.0" stylesheets="@Disenosapp.css">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="ID" />
+                            <TableColumn prefWidth="218.0" text="Producto" />
+                              <TableColumn prefWidth="111.0" text="Marca" />
+                              <TableColumn prefWidth="82.0" text="Cantidad" />
+                              <TableColumn prefWidth="98.0" text="Precio" />
+                          </columns>
+                           <styleClass>
+                              <String fx:value="tablas-datos" />
+                              <String fx:value="fondo-tablas" />
+                           </styleClass>
+                        </TableView>
+                        <Label layoutX="453.0" layoutY="679.0" prefHeight="20.0" prefWidth="95.0" text="TOTAL:">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="515.0" layoutY="679.0" prefHeight="20.0" prefWidth="95.0" text="\$0.0">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="43.0" layoutY="24.0" text="Ventas">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

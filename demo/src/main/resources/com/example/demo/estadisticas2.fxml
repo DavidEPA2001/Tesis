@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="822.0" prefWidth="1034.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.GraficoReal">
+   <children>
+      <BorderPane layoutX="-8.0" prefHeight="822.0" prefWidth="1205.0">
+         <center>
+            <AnchorPane prefHeight="822.0" prefWidth="1034.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="822.0" prefWidth="1205.0" style="-fx-background-color: #fff; -fx-background-radius: 8px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);;">
+                     <children>
+                        <Button fx:id="elboton" layoutX="69.0" layoutY="287.0" mnemonicParsing="false" onAction="#fucnBoton" prefHeight="50.0" prefWidth="100.0" styleClass="css-button-sharp--azul" text="ACTUALIZAR">
+                           <stylesheets>
+                              <URL value="@Disenosapp.css" />
+                              <URL value="@Disenosapp2.css" />
+                           </stylesheets></Button>
+                        <Label layoutX="21.0" layoutY="32.0" text="Estadìsticas">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="fechaInicio" layoutX="36.0" layoutY="187.0" prefHeight="26.0" prefWidth="132.0" />
+                        <GridPane layoutX="202.0" layoutY="2.0" prefHeight="813.0" prefWidth="966.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="880.5" minWidth="10.0" prefWidth="467.89703369140625" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="792.9290466308594" minWidth="0.0" prefWidth="412.60296630859375" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="494.4129333496094" minHeight="10.0" prefHeight="394.3271179199219" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="513.0" minHeight="0.0" prefHeight="390.6728820800781" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <PieChart fx:id="gpie" GridPane.columnIndex="1" />
+                              <BarChart fx:id="gbarAr">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                              <BarChart fx:id="gbarAb" GridPane.rowIndex="1">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                              <LineChart fx:id="gline" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                           </children>
+                        </GridPane>
+                        <DatePicker fx:id="fechaFin" layoutX="37.0" layoutY="237.0" prefHeight="26.0" prefWidth="132.0" />
+                     </children>
+                  </AnchorPane>
+                  <ComboBox layoutX="31.0" layoutY="147.0" prefWidth="150.0" promptText="OPCION.." />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

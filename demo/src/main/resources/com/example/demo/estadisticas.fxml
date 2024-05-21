@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="863.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.Estadisticas">
+   <children>
+      <BorderPane layoutX="-8.0" prefHeight="863.0" prefWidth="1205.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="774.0" prefWidth="242.0" stylesheets="@Disenosapp.css" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_BASKET" layoutX="28.0" layoutY="108.0" size="70" />
+                  <Button alignment="BASELINE_LEFT" layoutX="31.0" layoutY="197.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="215.0" styleClass="boton-sidebar" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BARCODE" size="40" styleClass="icono-slidebar" />
+                     </graphic>
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="29.0" layoutY="305.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="215.0" styleClass="boton-sidebar" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CREDIT_CARD_ALT" size="40" styleClass="icono-slidebar" />
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="29.0" layoutY="411.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="215.0" styleClass="boton-sidebar" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="AREA_CHART" size="40" styleClass="icono-slidebar" />
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="29.0" layoutY="517.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="215.0" styleClass="boton-sidebar" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="QUESTION_CIRCLE" size="40" styleClass="icono-slidebar" />
+                     </graphic>
+                  </Button>
+               </children>
+               <styleClass>
+                  <String fx:value="color-fondo-sidebar" />
+                  <String fx:value="tamano-slidebar" />
+               </styleClass>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="745.0" prefWidth="932.0" style="-fx-background-color: #fff; -fx-background-radius: 8px; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5,0,0,0);;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <ComboBox layoutX="21.0" layoutY="137.0" prefWidth="150.0" promptText="OPCION.." />
+                        <ComboBox layoutX="21.0" layoutY="201.0" prefWidth="150.0" promptText="MES.." />
+                        <Button layoutX="21.0" layoutY="276.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" styleClass="css-button-sharp--azul" text="ACTUALIZAR">
+                           <stylesheets>
+                              <URL value="@Disenosapp.css" />
+                              <URL value="@Disenosapp2.css" />
+                           </stylesheets></Button>
+                        <AreaChart layoutX="275.0" layoutY="23.0" prefHeight="328.0" prefWidth="747.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="25.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </AreaChart>
+                        <Label layoutX="21.0" layoutY="32.0" text="Estadìsticas">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                        <AreaChart layoutX="41.0" layoutY="343.0" prefHeight="328.0" prefWidth="412.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </AreaChart>
+                        <AreaChart layoutX="500.0" layoutY="343.0" prefHeight="328.0" prefWidth="412.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </AreaChart>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
